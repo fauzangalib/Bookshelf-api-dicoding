@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f0efeb;
+    }
+.col-1 {
+
+    width: 30% !important;
+    padding: 5px;
+}
+.col-2 {
+
+    width: 35% !important;
+    padding: 5px;
+}
+.col-3 {
+
+    width: 35% !important;
+    padding: 5px;
+}
+
+  .content {
+    width: 100%;
+    display: flex;
+    margin-top: -45px;
+    box-sizing: border-box;
+  }
+
+input, button {
+    font-size: 14px;
+}
+
+.head_bar {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 120px;
+
+}
+
+main {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: black;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #adf7b6;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 4px 5px 0 #adf7b6;
+} */
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+}
+
+.search_section > h2 {
+    color: black;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 5px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: #adf7b6;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 5px 0 #adf7b6;
+}
+
+.book_shelf {
+
+
+    padding: 16px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+
+}
+
+.book_shelf > h2 {
+    color: black;
+    text-align: center;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+    
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: #eeddd3
+    
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: #37898c;
+    color: white;
+    box-shadow: 0 4px 5px 0 #37898c;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: #f79cb1;
+    color: white;
+    box-shadow: 0 4px 5px 0 #f79cb1;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+}
+.input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font: inherit;
+    background-color: transparent;
+    outline: 2px solid #fff;
+    width: 100%;
+}
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10px, 10px);
+    transition: transform .25s;
+}
+.input:focus+.input-label,
+.input:valid+.input-label {
+    transform:
+    translate(10px, -14px) scale(.8);
+    color: black;
+    padding-inline: 5px;
+    background-color: white;
+}
+.input:is(:focus, :valid) {
+    outline-color: black;
+}
+
+
+.music-container {
+background-color: #fff;
+border-radius: 15px;
+box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
+display: flex;
+padding: 20px 30px;
+position: relative;
+margin: 20px 0;
+z-index: 10;
+}
+.music-label{
+    margin-bottom: 65px;
+    text-align: center;
+}
+.img-container {
+position: relative;
+width: 110px;
+}
+.img-container::after {
+content: "";
+background-color: #fff;
+border-radius: 50%;
+position: absolute;
+bottom: 100%;
+left: 50%;
+width: 20px;
+height: 20px;
+transform: translate(-50%, 50%);
+box-shadow: 0 0 0px 10px #000;
+}
+.img-container img {
+border-radius: 50%;
+object-fit: cover;
+height: 110px;
+width: inherit;
+position: absolute;
+bottom: 0;
+left: 0;
+animation: rotate 3s linear infinite;
+animation-play-state: paused;
+}
+.music-container.play .img-container img {
+animation-play-state: running;
+}
+@keyframes rotate {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+.navigation {
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1;
+}
+.action-btn {
+background-color: #fff;
+border: 0;
+color: #dfdbdf;
+font-size: 20px;
+cursor: pointer;
+padding: 10px;
+margin: 0 20px;
+}
+.action-btn.action-btn-big {
+color: #cdc2d0;
+font-size: 30px;
+}
+.music-info {
+background-color: rgba(255, 255, 255, 0.5);
+width: calc(100% - 40px);
+padding: 10px 10px 10px 150px;
+border-radius: 15px 15px 0px 0px;
+position: absolute;
+top: 0;
+left: 20px;
+opacity: 0;
+transform: translateY(0%);
+transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+z-index: 0;
+}
+.music-container.play .music-info {
+opacity: 1;
+transform: translateY(-100%);
+}
+.music-info h4 {
+margin: 0;
+}
+.progress-container {
+background-color: #fff;
+border: 5px;
+cursor: pointer;
+margin: 10px 0;
+height: 4px;
+width: 100%;
+}
+.progress {
+background-color: #fe8daa;
+border-radius: 5px;
+height: 100%;
+width: 0%;
+transform: width 0.1s linear;
+}
+.footer {
+    position:flex;
+    bottom:0;
+    width:100%;
+    height:60px;  
+    text-align: center; 
+ }
